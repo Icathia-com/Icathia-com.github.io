@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Icathia: projects</title>
+<meta name="description" content="Projects I'm building. Tap an icon to take a look.">
+<meta property="og:title" content="Icathia: projects">
+<meta property="og:description" content="Projects I'm building. Tap an icon to take a look.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230E1117'/%3E%3Ccircle cx='32' cy='32' r='12' fill='none' stroke='%23fff' stroke-width='5'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#0B0E14;--card:#141923;--line:#252C3A;--ink:#EEF1F6;--muted:#9AA4B5;--accent:#8FB4FF}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;background:radial-gradient(900px 500px at 80% -10%,#1B2640 0%,transparent 60%),radial-gradient(700px 500px at -10% 110%,#2A1B3D 0%,transparent 55%),var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;display:flex;flex-direction:column}
+main{width:100%;max-width:880px;margin:0 auto;padding:max(48px,env(safe-area-inset-top)) 24px 32px;flex:1}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.02em;font-size:15px;color:var(--muted)}
+.brand i{width:12px;height:12px;border-radius:50%;border:3px solid var(--ink);display:inline-block}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.05;letter-spacing:-.03em;margin:28px 0 12px;font-weight:700}
+.lead{max-width:520px;color:var(--muted);font-size:18px;line-height:1.5;margin:0 0 44px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;gap:14px;padding:22px;border-radius:26px;background:var(--card);border:1px solid var(--line);text-decoration:none;color:inherit;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+a.card:hover,a.card:focus-visible{transform:translateY(-3px);border-color:#3A4660;box-shadow:0 18px 40px rgba(0,0,0,.35);outline:none}
+.icon{width:76px;height:76px;border-radius:20px;display:block;box-shadow:0 10px 24px rgba(0,0,0,.4)}
+.card h2{margin:0;font-size:21px;letter-spacing:-.01em}
+.card p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
+.go{margin-top:auto;display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14px;color:var(--accent)}
+.soon{border-style:dashed;background:transparent;justify-content:center;align-items:flex-start;min-height:210px}
+.soon h2{color:var(--muted);font-weight:600;font-size:17px}
+footer{padding:20px 24px max(24px,env(safe-area-inset-bottom));text-align:center;font-size:13px;color:#6C7689}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><i></i>Icathia</div>
+  <h1>Projects I'm building.</h1>
+  <p class="lead">A few things I'm working on right now. Tap an icon to take a look.</p>
+  <section class="grid" aria-label="Projects">
+    <a class="card" href="lifecentre-app-prototype/" aria-label="Life Centre app: open the prototype">
+      <svg class="icon" viewBox="0 0 76 76" role="img" aria-label="Life Centre app icon">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA"/><stop offset="1" stop-color="#8A4FD6"/></linearGradient></defs>
+        <rect width="76" height="76" rx="20" fill="url(#g)"/>
+        <circle cx="38" cy="38" r="16" fill="none" stroke="#fff" stroke-width="6"/>
+        <circle cx="38" cy="38" r="5" fill="#fff"/>
+      </svg>
+      <h2>Life Centre app</h2>
+      <p>A church app for members: a daily verse and calendar, announcements, giving, short videos and more. This is an interactive prototype with sample data.</p>
+      <span class="go">View the prototype <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></span>
+    </a>
+    <div class="card soon">
+      <h2>More projects coming soon</h2>
+    </div>
+  </section>
+</main>
+<footer>&copy; Icathia</footer>
+</body>
+</html>
